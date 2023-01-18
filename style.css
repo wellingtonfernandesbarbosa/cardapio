@@ -10,6 +10,7 @@ body {
 
 .principal {
     display: flex;
+    align-content: center;
     /* background-color: var(--cor-de-fundo); */
 }
 
@@ -24,24 +25,28 @@ body {
 .img {
     width: 25vw;
     position: absolute;
-    top: -20px;
-    right: -20px;
+    top: 0px;
+    right: 0px;
 }
 
 .card-form {
-    
+    display: flex;
+    margin: 10vh 10vw;
+    background-image: linear-gradient(to bottom, #ddfffd 1%, #f4dedc 100%);
+    padding: 5%;
+    border-radius: 20px;
 }
 
 .img1 {
     width: 25vw;
     position: absolute;
-    left: -20px;
-    bottom: -20px;
+    left: 0px;
+    bottom: 0px;
 }
 
 .img2 {
     width: 25vw;
     position: absolute;
-    right: -20px;
-    bottom: -20px;
+    right: 0px;
+    bottom: 0px;
 }
