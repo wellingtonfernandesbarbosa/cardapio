@@ -1,0 +1,47 @@
+:root {
+    --cor-de-fundo: #ddfffd;
+}
+
+body {
+    margin: 0 0 0 0;
+    background-image: linear-gradient(to bottom, #ddfffd 1%, #f4dedc 100%);
+    height: 100vh;
+}
+
+.principal {
+    display: flex;
+    /* background-color: var(--cor-de-fundo); */
+}
+
+.card-logo {
+    display: flex;
+}
+
+.logo {
+    height: 30vw;
+}
+
+.img {
+    width: 25vw;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.card-form {
+    
+}
+
+.img1 {
+    width: 25vw;
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+}
+
+.img2 {
+    width: 25vw;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+}
