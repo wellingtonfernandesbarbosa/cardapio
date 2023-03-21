@@ -8,14 +8,14 @@ const resultado = document.getElementById("resultado");
 
 // definição dos preços dos ingredientes
 const precos = {
-  "bolo-decorado": 7.5,
-  "naked-cake": 6.5,
-  "10-fatias": 0,
-  "20-fatias": 10,
-  "25-fatias": 20,
-  "35-fatias": 35,
-  "56-fatias": 50,
-  baunilha: 0,
+  "boloDecorado": 7.5,
+  "nakedCake": 6.5,
+  "10Fatias": 10,
+  "20Fatias": 18,
+  "25Fatias": 21,
+  "35Fatias": 28,
+  "56Fatias": 45,
+  baunilha: 2,
   chocolate: 2.5,
   coco: 1.5,
   brigadeiroComum: 2,
@@ -30,26 +30,27 @@ const precos = {
 
 // cálculo do preço do bolo
 function calcularPreco() {
-  const tipoBoloValue = tipoBolo.value;
-  const numFatiasValue = numFatias.value;
-  const massaValue = massa.value;
-  const recheioGourmetValue = recheioGourmet.value;
-  const mousseGourmetValue = mousseGourmet.value;
+    const tipoBoloValue = tipoBolo.value;
+    const numFatiasValue = numFatias.value;
+    const massaValue = massa.value;
+    const recheioGourmetValue = recheioGourmet.value;
+    const mousseGourmetValue = mousseGourmet.value;
+    
+    const precoTipoBolo = precos[tipoBoloValue];
+    const precoNumFatias = precos[numFatiasValue];
+    const precoMassa = precos[massaValue];
+    const precoRecheioGourmet = precos[recheioGourmetValue];
+    const precoMousseGourmet = precos[mousseGourmetValue];  
 
-  const precoTipoBolo = precos[tipoBoloValue];
-  const precoNumFatias = precos[numFatiasValue];
-  const precoMassa = precos[massaValue];
-  const precoRecheioGourmet = precos[recheioGourmetValue];
-  const precoMousseGourmet = precos[mousseGourmetValue];
-
-  const precoTotal =
+    const precoTotal =
     precoTipoBolo +
     precoNumFatias +
     precoMassa +
     precoRecheioGourmet +
     precoMousseGourmet;
 
-  resultado.textContent = `Preço total: R$${precoTotal.toFixed(2)}`;
+    console.log(precoTipoBolo)
+  resultado.textContent = `R$ ${precoTotal.toFixed(2)}`;
 }
 
 // adição do listener para o evento 'change'
