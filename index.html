@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Cardápio - DCA</title>
 </head>
@@ -11,14 +12,14 @@
     <section class="principal">
         <div class="card-logo">
             <img src="img/logo.png" alt="Logo da Doce Cacau Artes" class="logo">
-            <img src="" alt="enfeites">
+            <!-- <img src="" alt="enfeites"> -->
             <img src="img/img.png" alt="" class="img">
         </div>
     </section>
     <div class="card-form">
-            <form action="">
+            <form action="" class="form">
                 <p>Tipo de bolo:</p>
-                <select name="" id="tipo/bolo">
+                <select name="" id="tipoBolo">
                     <option value="decorado">Bolo decorado</option>
                     <option value="nakedCake">Naked Cake (bolo pelado)</option>
                 </select>
@@ -48,7 +49,7 @@
                 </select>
                 
                 <p>Sabor do mousse ou do 2º recheio gourmet:</p>
-                <select name="" id="mousse/gourmet">
+                <select name="" id="mousseGourmet">
                     <option value="maracujá">Maracujá</option>
                     <option value="morango">Morango</option>
                     <option value="limão">Limão</option>
@@ -61,7 +62,9 @@
                     <option value="nenhum">Nenhum</option>
                 </select>
             </form>
+        <div class="resultado" id="resultado"></div>
         </div>
+    
     <img src="img/img1.png" alt="" class="img1">
     <img src="img/img2.png" alt="" class="img2">
     <script src="script.js"></script>
